@@ -54,5 +54,10 @@ class LogsSingleton
     }
 }
 
-$instanciaLogs = LogsSingleton::getInstancia();
-print_r($instanciaLogs);
+$instancia = LogsSingleton::getInstancia();
+$instanciaNova = LogsSingleton::getInstancia(); 
+
+if ($instancia === $instanciaNova) 
+{ 
+ echo "são iguais";
+}
