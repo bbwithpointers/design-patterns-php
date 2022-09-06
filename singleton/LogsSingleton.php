@@ -54,5 +54,5 @@ class LogsSingleton
     }
 }
 
-$instanciaLogs = new LogsSingleton();
+$instanciaLogs = LogsSingleton::getInstancia();
 print_r($instanciaLogs);
